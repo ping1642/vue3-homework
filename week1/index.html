@@ -42,7 +42,8 @@
                           {{ item.price }}
                         </td>
                         <td width="150">
-                          <span class="text-success">啟用</span>
+                          <span class="text-success" v-if="item.is_enabled">啟用</span>
+                          <span v-else>未啟用</span>
                         </td>
                         <td width="120">
                             <!--將所點選的塞入所定義的tempProduct物件-->
